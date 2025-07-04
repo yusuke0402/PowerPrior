@@ -21,10 +21,10 @@ createdata=function(self.pattern_id){
   historical_1_number=with(numbers,historical_1[pattern_id==self.pattern_id])
   historical_1_vcvmatrix=diag(3)*with(covariances,historical[pattern_id==self.pattern_id])
   historical_1_mean=c(with(means,dim1[pattern_id==self.pattern_id&domain=="historical"]),with(means,dim2[pattern_id==self.pattern_id&domain=="historical"]),with(means,dim3[pattern_id==self.pattern_id&domain=="historical"]))
-  historical1x=rmvnorm(n=historical_1_number,mean = historical_1_mean,historical_1_vcvmatrix)
+  historical_1_x=rmvnorm(n=historical_1_number,mean = historical_1_mean,historical_1_vcvmatrix)
   epsilon=rnorm(n=historical_1_number,mean = 0,sd=1)
-  historical_1_y=truefunction(historical1x,rep(0,historical_1_number),epsilon,wi)
-  historical_1_x=cbind(1,historical1x[,1],historical1x[,2],historical1x[,3])
+  historical_1_y=truefunction(historical_1_x,rep(0,historical_1_number),epsilon,wi)
+  #historical_1_x=cbind(0,historical1x[,1],historical1x[,2],historical1x[,3])
   
   list(current_x=current_x,current_y=current_y,historical_1_x=historical_1_x,historical_1_y=historical_1_y)
 }
