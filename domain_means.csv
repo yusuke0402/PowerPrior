@@ -1,0 +1,13 @@
+pattern_id,domain,dim1,dim2,dim3
+previousresearch_1_1,current,1,1.2,1.25
+previousresearch_1_1,historical,0.5,1,1
+previousresearch_1_2,current,1,1.2,1.25
+previousresearch_1_2,historical,0.5,1,1
+previousresearch_1_3,current,0.5,1,1
+previousresearch_1_3,historical,0.5,1,1
+previousresearch_1_4,current,0.5,1,1
+previousresearch_1_4,historical,0.5,1,1
+previousresearch_1_5,current,1,1.2,1.25
+previousresearch_1_5,historical,0.5,1,1
+previousresearch_1_6,current,0.5,1,1
+previousresearch_1_6,historical,0.5,1,1
